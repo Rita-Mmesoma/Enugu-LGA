@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+    <title>Enugu State LGA</title>
+</head>
+<body>
+    <h1>Enugu state local government</h1>
+    <div id="data-table">
+        <form method="POST" action="">
+            <input type="text" name="name" placeholder="Add new local govt...">
+            <button type="submit">Add</button>
+        </form>
+        <ol>
+            <% for(let i = 0; i < lga.length; i++){ %>
+                <li><%= lga[i].name %></li>
+            <% } %>
+        </ol>
+    </div>
+</body>
+</html>
