@@ -4,19 +4,14 @@ const tasks = require('./routes/tasks')
 const connectDB = require('./db/connect')
 require('dotenv').config()
 
-//middleware
-// app.set('view engine', 'ejs')
+// const cors = require('cors');
+// app.use(cors());
 // app.use(express.static('./public'))
 app.use(express.json())
 
-//routes
-// app.get('/',  (req, res) =>{
-//     res.send('Joy')
-// })
-
 app.use('/api/v1/tasks', tasks)
 
-const port = 3000
+const port = 3500
 
 const start = async () =>{
     try{

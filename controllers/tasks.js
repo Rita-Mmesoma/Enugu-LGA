@@ -1,5 +1,6 @@
 const LGA = require('../model/task')
 
+console.log('jjj')
 const getAllLGA = async (req,res) => {
 //    res.send('Alll from controller')
    try{
@@ -22,6 +23,7 @@ const createLGA = async (req,res) => {
         console.log('errrorrrooo', err)
     }
 }
+console.log('lll')
 const getLGA = async (req,res) => {
     try{
         const {id:taskID} = req.params
@@ -35,6 +37,7 @@ const getLGA = async (req,res) => {
         res.status(500).json({ msg: err})
     }
 }
+console.log('mmm')
 const updateLGA = async (req,res) =>{
     // res.send('update')
    try{
@@ -53,6 +56,7 @@ const updateLGA = async (req,res) =>{
         res.status(500).json({ msg: err})
    }
 }
+console.log('nnn')
 const deleteLGA = async (req,res) => {
     try{
         const {id:taskID} = req.params
@@ -69,6 +73,7 @@ const deleteLGA = async (req,res) => {
         res.status(500).json({ msg: err})
     }
 }
+console.log('ooo')
 module.exports = {
     getAllLGA,
     createLGA,
